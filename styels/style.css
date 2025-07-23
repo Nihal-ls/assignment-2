@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+ 
+  box-sizing: border-box;
+}
 /* shared styles */
 .primary-color1{
     color: rgba(137, 135, 161, 1);
@@ -8,11 +13,20 @@
 .display-flex{
  display: flex;
 }
+.color1{
+    color: rgba(233, 90, 8, 1);
+}
+.color2{
+    color: rgba(0, 0, 0, 0.5);
+}
+
 /* navbar styles */
 .navbar{
     justify-content: space-between;
-    margin-left: 150px;
-    margin-right: 150px;
+    width: 1440px;
+    margin: 0 auto;
+    padding-left: 150PX ;
+    padding-right: 150PX;
     margin-top: 30px;
     align-items: center ;
     
@@ -38,17 +52,66 @@ ul li>a{
     font-size: 1rem;
     color: black;
 }
+/* hero banner  */
+.banner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "text image";
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.text {
+  grid-area: text;
+  padding: 10px;
+}
+
+.image {
+  grid-area: image;
+  text-align: right;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.bold {
+  font-weight: bold;
+  color: #000;
+}
+
+.orange {
+  color: #ff6600;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
 /* media quary */
 @media screen and (max-width: 576px) {
     .navbar{
         display: flex;
         justify-content: space-between;
-        width: auto;
-        margin: 0 auto;
+        width: 100%;
+        padding-right: 460px;
     }
     .nav-btn{
         display: none;
-
     }
   .shop{
     display: none;
@@ -56,4 +119,24 @@ ul li>a{
   .about{
     display: none;
   }
+ .banner-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image"
+      "text";
+    text-align: center;
+    padding-left: 200px;
+  }
+   h1 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 15px;
+  }
+  .image {
+    text-align: center;
+    
+  }
 }
+
+  
