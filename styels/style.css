@@ -19,6 +19,11 @@
 .color2{
     color: rgba(0, 0, 0, 0.5);
 }
+.btn-color{
+  background-color: rgba(233, 90, 8, 1);
+  color: white;
+  border: none;
+}
 
 /* navbar styles */
 .navbar{
@@ -101,7 +106,39 @@ p {
   color: #444;
   line-height: 1.6;
 }
-
+/* card section */
+.card-section{
+ text-align: center;
+ 
+}
+.card-div{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 49px;
+}
+.card{
+  width: 270px;
+  height: 480px;
+}
+ 
+.card-hedding{
+  font-size: 1.37rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.card-price{
+  font-size: 1.37rem;
+  font-weight: 700;
+}
+.card-btn{
+  width: 260px;
+  height: 40px;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 /* media quary */
 @media screen and (max-width: 576px) {
     .navbar{
@@ -134,8 +171,13 @@ p {
     font-size: 15px;
   }
   .image {
+    width: 400px;
+    height: 300px;
     text-align: center;
-    
+  }
+  .card-div{
+    grid-template-columns: repeat(2, 1fr);width: 100%;
+    margin: 0 auto;
   }
 }
 
