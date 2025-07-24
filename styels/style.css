@@ -145,6 +145,7 @@ p {
         display: flex;
         justify-content: space-between;
         width: 100%;
+        padding: 0 auto;
         padding-right: 460px;
     }
     .nav-btn{
@@ -162,7 +163,7 @@ p {
       "image"
       "text";
     text-align: center;
-    padding-left: 200px;
+    margin: 0 auto;
   }
    h1 {
     font-size: 32px;
@@ -171,12 +172,22 @@ p {
     font-size: 15px;
   }
   .image {
-    width: 400px;
+    width: 500px;
     height: 300px;
     text-align: center;
+    justify-items: center;
   }
+#section-title{
+  padding-left: 200px;
+}
+.card-description{
+    width: 300px;
+    margin-left: 100px;
+}
+  
   .card-div{
     grid-template-columns: repeat(2, 1fr);width: 100%;
+    justify-items: center;
     margin: 0 auto;
   }
 }
