@@ -367,9 +367,10 @@ p {
     .navbar{
         display: flex;
         justify-content: space-between;
-        width: 100%;
-        padding: 0 auto;
-        padding-right: 200px;
+        width: 1200px;
+      justify-items: center;
+      margin-left: 100px;
+        
     }
     .nav-btn{
         display: none;
@@ -387,9 +388,11 @@ p {
       "text";
     text-align: center;
     margin: 0 auto;
+    padding-left: 240px;
   }
    h1 {
     font-size: 32px;
+   
   }
   p {
     font-size: 15px;
@@ -397,33 +400,53 @@ p {
   .image {
     width: 500px;
     height: 300px;
-    text-align: center;
-    justify-items: center;
+    
   }
 #section-title{
-  padding-left: 200px;
+  width: 500px;
+  justify-items: center;
+  margin-left: 240px;
 }
 .card-description{
     width: 300px;
-    margin-left: 100px;
+    margin-left: 340px;
 }
   
   .card-div{
     grid-template-columns: repeat(2, 1fr);width: 100%;
+   
+    
     justify-items: center;
     margin: 0 auto;
+    padding-left: 240px;
   }
   .plant-lover{
-    grid-template-columns: repeat(1, 1fr)
-  }
+    grid-template-columns: repeat(1, 1fr);
+    width: 100vh;
+    padding-left: 240px;
+ }
   #badge{
     display: none;
+  }
+  .Flower-image{
+    width: 100vh;
+   margin: 0 auto;
   }
   .colorful-bunch-section {
     width: auto;
     height: auto;
   }
+ .letest-deal{
+  width: 100vh;
+
+ }
+.colorful-bunch-section{
+  width: 1200px;
+  padding-right: 200px;
+}
+.main-footer{
+  margin-left: 260px;
+}
 
 }
 
-  
