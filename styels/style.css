@@ -367,10 +367,16 @@ p {
     .navbar{
         display: flex;
         justify-content: space-between;
+        gap: 200px;
         width: 1200px;
-      justify-items: center;
-      margin-left: 100px;
+        justify-items: center;
+        margin-left: 100px;
+        margin-right: 100px;
+      
         
+    }
+    .cart-btn{
+      margin-right:300px;
     }
     .nav-btn{
         display: none;
@@ -401,6 +407,9 @@ p {
     width: 500px;
     height: 300px;
     
+  }
+  .flowerimage{
+    width: 100%;
   }
 #section-title{
   width: 500px;
